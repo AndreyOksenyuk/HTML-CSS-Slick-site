@@ -41,16 +41,16 @@ $('.project').slick({
       prevArrow: prevBtnProject,
       nextArrow: nextBtnProject,
       appendArrows: $('.project__slider-arrows'),
-		asNavFor: '.project__slider-bottom',
+      asNavFor: '.project__slider-bottom',
 });
 $('.project__slider-bottom').slick({
       slidesToShow: 4,
-		slidesToScroll: 1,
+      slidesToScroll: 1,
       infinite: true,
       adaptiveHeight: false,
       arrows: false,
       focusOnSelect: true,
-		asNavFor: '.project',
+      asNavFor: '.project',
 });
 
 
