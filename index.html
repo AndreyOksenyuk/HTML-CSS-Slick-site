@@ -13,17 +13,16 @@
 </head>
 <body>
    <!-- Header -->
-   <div class="container">
-      <header class="header">
+      <header class="header" ">
          <img src="img/Logo.png" alt="Selene" class="header__logo">
          <nav class="nav">
             <ul>
-               <li>home</li>
-               <li>about us</li>
-               <li>projects</li>
-               <li>clients</li>
-               <li>contact</li>
-               <li>blog</li>
+               <a href="#" class="nav-link" data-nav="#Home"><li>home</li></a> 
+               <a href="#" class="nav-link" data-nav="#AboutUs"><li>about us</li></a>
+               <a href="#" class="nav-link" data-nav="#Project"><li>projects</li></a>
+               <a href="#" class="nav-link" data-nav="#Clients"><li>clients</li></a>
+               <a href="#" class="nav-link" data-nav="#Contact"><li>contact</li></a>
+               <a href="#" class="nav-link" data-nav="#Blog"><li>blog</li></a>
             </ul>
             <form action="" class="search-form">
                <input type="search" class="search">
@@ -31,11 +30,10 @@
             </form>
          </nav>
       </header>
-   </div>
 
  
    <!-- Slider Top -->
-<div class="intro">
+<div class="intro" id="Home">
    <div class="intro__slider">
       <img src="./img/slider-top/01.jpg" alt="">
       <img src="./img/slider-top/02.jpg" alt="">
@@ -83,7 +81,7 @@
 </div>
 
 <!-- We create cool ideas -->
-   <div class="ideas">
+   <div class="ideas" id="AboutUs">
       <div class="ideas__left">
          <h3 class="ideas__left-title">Curabitur volutpat</h3>
          <p class="ideas__left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem augue. Maecenas vehicula metus eros, et
@@ -98,7 +96,7 @@
 
 <!-- Categories -->
 
-   <div class="categories">
+   <div class="categories" id="Blog">
       <div class="categori__inner">
          <img src="img/Categories/01.jpg" alt="categori" class="categori__img">
          <a href="#" class="categori__title">Idea.</a>
@@ -143,7 +141,7 @@
    </div>
 
 <!-- Latest Project -->
-   <div class="Latest__Project-main">
+   <div class="Latest__Project-main" id="Project">
       <div class="project__slider-arrows"></div>
       <div class="project">
          <div class="project__slider">
@@ -205,7 +203,7 @@
    </div>
 
 <!-- Logos -->
-   <div class="logos">
+   <div class="logos" id="Clients">
       <div class="logos__img"><img src="img/logos/01.png" alt="logo"></div>
       <div class="logos__img"><img src="img/logos/02.png" alt="logo"></div>
       <div class="logos__img"><img src="img/logos/03.png" alt="logo"></div>
@@ -215,7 +213,7 @@
    </div>
 
 <!-- Contacts us -->
-   <div class="contacts">
+   <div class="contacts" id="Contact">
       <div class="contacts__inner">
 
          <div class="contacts__inner-tabs">
@@ -242,11 +240,7 @@
                <a href="mailto:email@email.com">Ask questions by e-mail: email@email.com</a>
             </div>
          </div><!-- tabs -->
-            
-         
-
-            <img src="img/contacts/contacts-img.jpg" alt="img" class="contacts__inner-img">
-            
+            <img src="img/contacts/contacts-img.jpg" alt="img" class="contacts__inner-img">  
       </div>
    </div> 
 <!-- Footer -->

@@ -59,3 +59,40 @@ $('.project__slider-bottom').slick({
   	$(".contacts__inner-tabs").tabs();
   });
 
+//Header fixed
+let headerHeight = $('.header').height();
+let header = $('.header');
+
+$(window).on('scroll load', function () {
+   if (window.pageYOffset > headerHeight) {
+      header.css({
+            "position": "fixed",
+            'animation-name': 'head',
+            'animation-duration': '0.4s',
+            'animation-timing-function': 'ease-in-out',
+            'animation-fill-mode': 'forwards',
+      })
+   }
+   if (window.pageYOffset < headerHeight) {
+      header.css({
+            "position": "relative",
+            'animation-name': 'headOut',
+      })
+   }
+})
+
+// smooth scrool
+$(function () {
+      $('.nav-link').on('click', function () {
+            event.preventDefault();
+            let idElement = $(this).data('nav');
+            let offsetTop = $(idElement).offset().top;
+
+            $('html, body').animate({
+                  scrollTop: offsetTop - 120
+            }, 700);
+
+      });
+});
+
+
